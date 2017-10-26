@@ -1,0 +1,1 @@
+a:6:{i:0;s:5:"picId";i:1;s:6:"prodId";i:2;s:7:"colorId";i:3;s:5:"image";s:3:"_pk";s:5:"picId";s:5:"_type";a:4:{s:5:"picId";s:7:"int(11)";s:6:"prodId";s:7:"int(11)";s:7:"colorId";s:10:"tinyint(4)";s:5:"image";s:11:"varchar(64)";}}

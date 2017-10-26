@@ -1,0 +1,1 @@
+a:5:{i:0;s:7:"powerId";i:1;s:9:"powerName";i:2;s:3:"pId";s:3:"_pk";s:7:"powerId";s:5:"_type";a:3:{s:7:"powerId";s:7:"int(11)";s:9:"powerName";s:8:"char(24)";s:3:"pId";s:7:"int(11)";}}

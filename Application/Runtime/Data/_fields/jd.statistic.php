@@ -1,0 +1,1 @@
+a:9:{i:0;s:5:"staId";i:1;s:9:"saleTotal";i:2;s:8:"sumMoney";i:3;s:6:"yearId";i:4;s:7:"monthId";i:5;s:5:"dayId";i:6;s:7:"addTime";s:3:"_pk";s:5:"staId";s:5:"_type";a:7:{s:5:"staId";s:7:"int(11)";s:9:"saleTotal";s:7:"int(11)";s:8:"sumMoney";s:12:"double(14,2)";s:6:"yearId";s:7:"int(11)";s:7:"monthId";s:7:"int(11)";s:5:"dayId";s:7:"int(11)";s:7:"addTime";s:7:"int(11)";}}

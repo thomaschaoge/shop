@@ -1,0 +1,1 @@
+a:5:{i:0;s:10:"relationId";i:1;s:7:"levelId";i:2;s:7:"powerId";s:3:"_pk";s:10:"relationId";s:5:"_type";a:3:{s:10:"relationId";s:7:"int(11)";s:7:"levelId";s:10:"tinyint(4)";s:7:"powerId";s:7:"int(11)";}}

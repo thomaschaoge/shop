@@ -1,0 +1,1 @@
+a:6:{i:0;s:7:"countId";i:1;s:7:"adminId";i:2;s:8:"loginNum";i:3;s:8:"lastTime";s:3:"_pk";s:7:"countId";s:5:"_type";a:4:{s:7:"countId";s:7:"int(11)";s:7:"adminId";s:7:"int(11)";s:8:"loginNum";s:7:"int(11)";s:8:"lastTime";s:7:"int(11)";}}

@@ -1,0 +1,1 @@
+a:4:{i:0;s:6:"sizeId";i:1;s:8:"sizeName";s:3:"_pk";s:6:"sizeId";s:5:"_type";a:2:{s:6:"sizeId";s:20:"tinyint(12) unsigned";s:8:"sizeName";s:8:"char(12)";}}

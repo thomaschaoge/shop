@@ -1,0 +1,1 @@
+a:6:{i:0;s:7:"colorId";i:1;s:9:"colorName";i:2;s:3:"rgb";i:3;s:6:"rgbimg";s:3:"_pk";s:7:"colorId";s:5:"_type";a:4:{s:7:"colorId";s:11:"smallint(6)";s:9:"colorName";s:8:"char(12)";s:3:"rgb";s:8:"char(32)";s:6:"rgbimg";s:11:"varchar(32)";}}

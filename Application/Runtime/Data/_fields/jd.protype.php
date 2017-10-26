@@ -1,0 +1,1 @@
+a:7:{i:0;s:9:"proTypeId";i:1;s:7:"proName";i:2;s:6:"proPid";i:3;s:7:"proPath";i:4;s:7:"proLive";s:3:"_pk";s:9:"proTypeId";s:5:"_type";a:5:{s:9:"proTypeId";s:7:"int(11)";s:7:"proName";s:12:"varchar(255)";s:6:"proPid";s:7:"int(11)";s:7:"proPath";s:12:"varchar(255)";s:7:"proLive";s:10:"tinyint(4)";}}

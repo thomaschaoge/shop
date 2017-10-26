@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!-- Viewport Metatag -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!-- Plugin Stylesheets first to ease overrides -->
+<link rel="stylesheet" type="text/css" href="__ADMIN__/plugins/colorpicker/colorpicker.css" media="screen">
+
+<!-- Required Stylesheets -->
+<link rel="stylesheet" type="text/css" href="__ADMIN__/bootstrap/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/fonts/ptsans/stylesheet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/fonts/icomoon/style.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/mws-style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/icons/icol16.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/icons/icol32.css" media="screen">
+
+<!-- Demo Stylesheet -->
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/demo.css" media="screen">
+
+<!-- jQuery-UI Stylesheet -->
+<link rel="stylesheet" type="text/css" href="__ADMIN__/jui/css/jquery.ui.all.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/jui/jquery-ui.custom.css" media="screen">
+
+<!-- Theme Stylesheet -->
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/mws-theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/themer.css" media="screen">
+
+<title>MWS Admin - Table</title>
+
+</head>
+
+<body>
+
+
+	<!-- Header -->
+    <block name="include"><include file="Common/header" /></block>
+    
+    <!-- Start Main Wrapper -->
+    <div id="mws-wrapper">
+    
+    	<!-- Necessary markup, do not remove -->
+		<div id="mws-sidebar-stitch"></div>
+		<div id="mws-sidebar-bg"></div>
+        
+        <!-- Sidebar Wrapper -->
+        <div id="mws-sidebar">
+        
+            <!-- Hidden Nav Collapse Button -->
+            <div id="mws-nav-collapse">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+        	<!-- Left -->
+            <block name="include"><include file="Common/left_nav" /></block>
+
+        </div>
+        
+        <!-- Main Container Start -->
+        <div id="mws-container" class="clearfix">
+        
+        	<!-- Inner Container Start -->
+            <div class="container">
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-table"></i>广告浏览</span>
+                    </div>
+                   
+                    <div class="mws-panel-body no-padding">
+                        <table class="mws-datatable-fn mws-table">
+                            <thead>
+                                <tr>
+                                    <th>编号</th>
+                                    <th>图片</th>
+                                    <th>链接地址</th>
+                                    <th>显示位置</th>
+                                    <th>是否显示</th>
+                                    <th>显示顺序</th>
+                                    <th>添加时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="list" item="vo">
+                                <tr>
+                                    <td>{$key+1}</td>
+                                    <td><img src="__PUBLIC__/Uploads/Advance/m_{$vo.img}" /></td>
+                                    <td>{$vo.links}</td>
+                                    <td>
+                                        <switch name="vo['location']">
+                                            <case value="0">首页</case>
+                                            <case value="1">二级页</case>
+                                            <default />没有值
+                                        </switch>
+                                    </td>
+                                    <td>
+                                        <switch name="vo['status']">
+                                            <case value="0">显示</case>
+                                            <case value="1">不显示</case>
+                                            <default />没有值
+                                        </switch>
+                                    </td>
+                                    <td>{$vo.seriation}</td>
+                                    <td>{$vo.addtime|date="Y-m-d",###}</td>
+                                    <td>
+                                        <a href="{:U('Advance/advanceEdit',array('advanceId'=>$vo['advanceId']))}"><button type="button" class="btn" >修改</button></a>
+                                        <a href="{:U('Advance/advanceDel',array('advanceId'=>$vo['advanceId']))}"><button type="button" class="btn" >删除</button></a>
+                                    </td>
+                                </tr>
+                                </foreach>   
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                
+                <!-- Panels End -->
+            </div>
+            <!-- Inner Container End -->
+                       
+            <!-- Footer -->
+            <div id="mws-footer">
+            	Copyright Your Website 2012. All Rights Reserved.
+            </div>
+            
+        </div>
+        <!-- Main Container End -->
+        
+    </div>
+
+    <!-- JavaScript Plugins -->
+    <script src="__ADMIN__/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="__ADMIN__/js/libs/jquery.mousewheel.min.js"></script>
+    <script src="__ADMIN__/js/libs/jquery.placeholder.min.js"></script>
+    <script src="__ADMIN__/custom-plugins/fileinput.js"></script>
+    
+    <!-- jQuery-UI Dependent Scripts -->
+    <script src="__ADMIN__/jui/js/jquery-ui-1.9.2.min.js"></script>
+    <script src="__ADMIN__/jui/jquery-ui.custom.min.js"></script>
+    <script src="__ADMIN__/jui/js/jquery.ui.touch-punch.js"></script>
+
+    <!-- Plugin Scripts -->
+    <script src="__ADMIN__/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="__ADMIN__/plugins/colorpicker/colorpicker-min.js"></script>
+
+    <!-- Core Script -->
+    <script src="__ADMIN__/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__ADMIN__/js/core/mws.js"></script>
+
+    <!-- Themer Script (Remove if not needed) -->
+    <script src="__ADMIN__/js/core/themer.js"></script>
+
+    <!-- Demo Scripts (remove if not needed) -->
+    <script src="__ADMIN__/js/demo/demo.table.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+a:7:{i:0;s:8:"detailId";i:1;s:7:"orderId";i:2;s:9:"productId";i:3;s:6:"amount";i:4;s:5:"price";s:3:"_pk";s:8:"detailId";s:5:"_type";a:5:{s:8:"detailId";s:7:"int(11)";s:7:"orderId";s:7:"int(11)";s:9:"productId";s:7:"int(11)";s:6:"amount";s:7:"int(11)";s:5:"price";s:11:"double(8,2)";}}

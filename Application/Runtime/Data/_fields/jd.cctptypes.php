@@ -1,0 +1,1 @@
+a:5:{i:0;s:10:"cctptypeId";i:1;s:12:"cctptypeName";i:2;s:9:"indexCCId";s:3:"_pk";s:10:"cctptypeId";s:5:"_type";a:3:{s:10:"cctptypeId";s:11:"smallint(6)";s:12:"cctptypeName";s:8:"char(24)";s:9:"indexCCId";s:11:"smallint(6)";}}

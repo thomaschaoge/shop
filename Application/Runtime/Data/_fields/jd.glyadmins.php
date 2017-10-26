@@ -1,0 +1,1 @@
+a:8:{i:0;s:7:"adminId";i:1;s:5:"uname";i:2;s:4:"upwd";i:3;s:8:"nickName";i:4;s:7:"levelId";i:5;s:9:"isdeleted";s:3:"_pk";s:7:"adminId";s:5:"_type";a:6:{s:7:"adminId";s:7:"int(11)";s:5:"uname";s:8:"char(24)";s:4:"upwd";s:8:"char(32)";s:8:"nickName";s:8:"char(24)";s:7:"levelId";s:10:"tinyint(4)";s:9:"isdeleted";s:10:"tinyint(1)";}}

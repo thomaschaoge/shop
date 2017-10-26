@@ -1,0 +1,1 @@
+a:6:{i:0;s:9:"indexCCId";i:1;s:7:"indexCC";i:2;s:10:"indexCCPid";i:3;s:10:"indexCCDWZ";s:3:"_pk";s:9:"indexCCId";s:5:"_type";a:4:{s:9:"indexCCId";s:11:"smallint(6)";s:7:"indexCC";s:8:"char(12)";s:10:"indexCCPid";s:11:"smallint(6)";s:10:"indexCCDWZ";s:12:"varchar(128)";}}
